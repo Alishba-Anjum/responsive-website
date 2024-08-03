@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="nav-part2">
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>Courses</h4>
+                <h4>Help</h4>
+                <h4>Contact</h4>
+                <button>sign in</button>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Courses</h4>
+            <h4>Help</h4>
+            <h4>Contact</h4>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h1>Learn & become <br><SPAN>BEST WEB-DEVELOPER</SPAN></h1>
+                <P>Lorem ipsum laudantium, natus itaque ineligendi deserunt labore quis et enim ut doloribus odio expedita, voluptatibus placeat consectetur, quaerat deleniti.</P>
+                <button>Explore Now</button>
+            </div>
+            <div class="right">
+                <img src="girl.png" alt="">
+            </div>
+
+        </div>
+        <div class="cards">
+            <div><img src="html.jpg" alt="">
+                <h1>HTML</h1>
+                <P>HTML describe the structure of web page</P>
+                <a href="https://youtu.be/yxBl7ZV57dE">learn html</a>
+            </div>
+            <div>
+                <img src="css.png" alt="">
+                <h1>CSS</h1>
+                <P>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</P>
+               <a href="https://youtu.be/ESnrn1kAD4E">Learn css</a>
+            </div>
+            <div>
+                <img src="js.png" alt="">
+                <h1>Javascript</h1>
+                <p>JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. </p>
+                <a href="https://youtu.be/oGR3a965jhI">learn js</a>
+            </div>
+        </div>
+        <footer>
+            <div class="icons">
+                <i class="fa-brands fa-square-facebook" style="color: rgb(87, 87, 245);"></i>
+                <i class="fa-brands fa-square-instagram" style="color: rgb(155, 56, 155);"></i>
+                <i class="fa-brands fa-linkedin" style="color: rgb(33, 33, 85);"></i>
+                <i class="fa-brands fa-square-twitter" style="color: rgb(49, 120, 202);"></i>
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+                
+            </div>
+            <p>Created by| Alishba</p>
+        </footer>
+    </div>
+    
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById('mobileMenu');
+        var icon = document.querySelector('.nav-part2 i');
+        if (menu.style.display === 'flex') {
+          menu.style.display = 'none';
+          icon.classList.remove('active');
+        } else {
+          menu.style.display = 'flex';
+          icon.classList.add('active');
+        }
+      }
+    </script>
+  </body>
+</html>
