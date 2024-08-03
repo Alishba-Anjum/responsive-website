@@ -106,8 +106,8 @@ button{
     
 }
 .cards div{
-    height: 33vw;
-    width: 25vw;
+    height: 60%;
+    width: 25%;
     border: 1px solid rgb(216, 186, 186);
     display: flex;
     justify-content: center;
@@ -119,6 +119,7 @@ button{
 .cards div p{
     margin-top: 2vw;
     margin-bottom: 2vw;
+    font-size: 1.2vw;
 }
 .cards div a{
     font-size: 1.6vw;
@@ -226,7 +227,7 @@ footer p{
     font-size: 6vw;
 }
     .cards div p{
-       font-size: 4vw;
+       font-size: 3vw;
        margin-top:  6vw;
     }
     .cards div a{
